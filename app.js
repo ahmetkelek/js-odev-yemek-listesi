@@ -126,10 +126,10 @@ const categoryList = () => {
     .join("");
 
   btnContainer.innerHTML = categoryBtns;
-  const filterBtns = document.querySelectorAll(".btn-item");
+  const filterButton = document.querySelectorAll(".btn-item");
 
     
-    filterBtns.forEach((btn) => {
+    filterButton.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         const category = e.currentTarget.dataset.id;
         console.log(category);
